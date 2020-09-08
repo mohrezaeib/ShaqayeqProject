@@ -9,8 +9,8 @@ using WpfApp1;
 namespace WpfApp1.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20200908061002_SecondMG")]
-    partial class SecondMG
+    [Migration("20200908075006_I")]
+    partial class I
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,8 +64,10 @@ namespace WpfApp1.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("NationalCode")
-                        .HasColumnType("int")
-                        .HasMaxLength(10);
+                        .HasColumnType("int");
+
+                    b.Property<int>("UniId")
+                        .HasColumnType("int");
 
                     b.HasKey("StudentId");
 

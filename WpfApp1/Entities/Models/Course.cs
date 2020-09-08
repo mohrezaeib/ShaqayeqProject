@@ -7,6 +7,7 @@ namespace WpfApp1.Entities.Models
 {
     public class Course
     {
+       
         [Required]
         public int CourseId { get; set; }
         public string CourseName { get; set; }

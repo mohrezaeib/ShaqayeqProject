@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,42 +18,65 @@ namespace WpfApp1
 
         public Course AddCourse(Course st)
         {
-            throw new NotImplementedException();
+            _context.Courses.Add(st);
+            
+            _context.SaveChanges();
+            return st;
         }
 
         public Student AddStudent(Student st)
         {
-            throw new NotImplementedException();
+
+            _context.Students.Add(st);
+          
+            _context.SaveChanges();
+
+          
+            return st;
         }
 
-        public StudentCourse AddStudentsCourse(int StudentId, int CourseId)
+        public StudentCourse AddStudentsCourse(int uniId, int CourseId)
         {
-            throw new NotImplementedException();
+            Student st = _context.Students.Where(b => b.UniId == uniId)
+                    .FirstOrDefault();
+
+            var stc = new StudentCourse() { StudentId = st.StudentId, CourseId = CourseId };
+
+            _context.StudentCourses.Add(stc);
+            return stc;
         }
 
         public Course DeleteCourse(Course st)
         {
-            throw new NotImplementedException();
+            _context.Courses.Add(st);
+            _context.SaveChanges();
+            return st;
         }
 
         public Student DeleteStudent(Student st)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            Console.WriteLine("NotImplemented");
+            return st;
         }
 
         public Course EditCourse(Course st)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            Console.WriteLine("NotImplemented");
+            return st;
         }
 
         public Student EditStudent(Student st)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+            Console.WriteLine("NotImplemented");
+            return st;
         }
 
         public List<Course> GetCourseData()
         {
-            throw new NotImplementedException();
+           return  _context.Courses.ToList();
         }
 
 

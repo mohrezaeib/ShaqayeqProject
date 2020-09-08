@@ -94,3 +94,9 @@ C:\Users\Developer204\source\repos\WpfApp1\wpfapp1\bin\Debug\netcoreapp3.1\runti
 C:\Users\Developer204\source\repos\WpfApp1\wpfapp1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Developer204\source\repos\WpfApp1\wpfapp1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Developer204\source\repos\WpfApp1\wpfapp1\obj\Debug\netcoreapp3.1\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Developer204\source\repos\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AddStudentd.g.cs
+C:\Users\Developer204\source\repos\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AddStudentd.baml
+C:\Users\Developer204\source\repos\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AddCourse.g.cs
+C:\Users\Developer204\source\repos\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AddStudentCourse.g.cs
+C:\Users\Developer204\source\repos\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AddCourse.baml
+C:\Users\Developer204\source\repos\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AddStudentCourse.baml

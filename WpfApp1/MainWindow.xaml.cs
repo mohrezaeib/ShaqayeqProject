@@ -23,19 +23,32 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        private IMainWindowModel _main;
+        private IMainWindowModel _model;
 
-        public MainWindow(IMainWindowModel mainWindowModel)
+        public MainWindow(IMainWindowModel model)
         {
-            _main = mainWindowModel;
+            _model = model;
             InitializeComponent();
-            dataGrid1.ItemsSource = _main.GetStudentData();
+            //dataGrid1.ItemsSource = _main.GetStudentData();
 
         }
        
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+      
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+             AddStudentd addSudentWindow = new AddStudentd(_model);
+            addSudentWindow.Show();
+        }
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            AddCourse addCS = new AddCourse(_model);
+            addCS.Show();
+        }
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            AddStudentCourse stcs = new AddStudentCourse(_model);
+            stcs.Show();
         }
     }
 }

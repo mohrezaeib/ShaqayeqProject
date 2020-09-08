@@ -8,11 +8,11 @@ namespace WpfApp1
 {
     public class Student
     {
-        [Required]
         public int StudentId { get; set; }
-        [Required]
-        [MaxLength(10)]
-        [MinLength(10)]
+       
+        public int UniId { get; set; }
+       
+     
         public int NationalCode { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }

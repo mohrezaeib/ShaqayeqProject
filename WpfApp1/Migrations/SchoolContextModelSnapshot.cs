@@ -62,8 +62,10 @@ namespace WpfApp1.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("NationalCode")
-                        .HasColumnType("int")
-                        .HasMaxLength(10);
+                        .HasColumnType("int");
+
+                    b.Property<int>("UniId")
+                        .HasColumnType("int");
 
                     b.HasKey("StudentId");
 

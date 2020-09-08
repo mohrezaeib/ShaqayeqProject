@@ -2,7 +2,7 @@
 
 namespace WpfApp1.Migrations
 {
-    public partial class SecondMG : Migration
+    public partial class I : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -25,7 +25,8 @@ namespace WpfApp1.Migrations
                 {
                     StudentId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NationalCode = table.Column<int>(maxLength: 10, nullable: false),
+                    UniId = table.Column<int>(nullable: false),
+                    NationalCode = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true)
                 },

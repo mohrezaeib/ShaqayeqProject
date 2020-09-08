@@ -7,11 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid   Name="dataGrid1" SelectionChanged="DataGrid_SelectionChanged">
-            <DataGrid.Columns>
-                <DataGridTextColumn/>
-            </DataGrid.Columns>
-        </DataGrid>
-
+        <Button Content="Add Student" HorizontalAlignment="Left" Height="75" Margin="66,89,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click"/>
+        <Button Content="Add Course" HorizontalAlignment="Left" Height="75" Margin="66,231,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click1"/>
+        <Button Content="Add Course To a Student" HorizontalAlignment="Left" Height="75" Margin="411,89,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click2"/>
     </Grid>
 </Window>
